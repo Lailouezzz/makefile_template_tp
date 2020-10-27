@@ -13,8 +13,8 @@
 #         └── compilunit.c
 #
 # After compilation :
-# - ./build/<folder> contain all object files of <folder>
-# - ./<folder> is the executable of <folder>
+# - $(OBJDIR)/<folder> contain all object files of <folder>
+# - $(OUTDIR)/<folder> is the executable of <folder>
 #
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 include Makefile.vars Makefile.msg
