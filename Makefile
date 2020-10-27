@@ -6,11 +6,11 @@
 # This Makefile was design for compile many folder who contain source files
 # 
 # Description of source tree for folders :
-# ├── <folder>
-# │   ├── include
-# │   │   └── header.h
-# │   └── src
-# │       └── compilunit.c
+# └── <folder>
+#     ├── include
+#     │   └── header.h
+#     └── src
+#         └── compilunit.c
 #
 # After compilation :
 # - ./build/<folder> contain all object files of <folder>
