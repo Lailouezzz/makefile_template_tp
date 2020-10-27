@@ -70,6 +70,7 @@ Makefile.cfg:
 # Make the folders
 
 all-folders : $(patsubst %,$(OUTDIR)/%,$(FOLDERS))
+#	$(call msg,$(F_DEP))
 
 # Make a folder
 
@@ -92,3 +93,7 @@ $(foreach folder,$(FOLDERS), \
 $(eval $(call make-folder-objects-rule,$(folder))))
 
 .PHONY: all-folders
+
+# Include generated dep by cc
+
+-include $(F_DEP)
