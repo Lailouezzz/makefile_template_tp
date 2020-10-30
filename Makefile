@@ -70,7 +70,7 @@ Makefile.cfg:
 # Make the folders
 
 all-folders : $(patsubst %,$(OUTDIR)/%,$(FOLDERS))
-#	$(call msg,$(F_DEP))
+	$(call omsg,Binary files are stored in $(OUTDIR))
 
 # Make a folder
 

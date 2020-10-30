@@ -6,6 +6,7 @@
 # Define color
 BUILD_COLOR = \033[1;32m
 RM_COLOR    = \033[1;31m
+OK_COLOR    = \033[1;32m
 ERR_COLOR   = \033[1;31m
 NO_COLOR    = \033[0m
 
@@ -48,6 +49,13 @@ endef
 define msg
 	$(if $(MAKE_FULL_LOG),, \
 @printf "$2""> ""$(NO_COLOR)""$1""$(NO_COLOR)""\n")
+endef
+
+# OK message
+# arg1 : printed message
+# display : "> <arg1>"
+define omsg
+	$(call msg,$1,$(OK_COLOR))
 endef
 
 
